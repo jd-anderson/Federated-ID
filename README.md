@@ -6,7 +6,7 @@ This repository includes the MATLAB codes to implement the experimental results 
 
 ## Instructions
 
-To run the codes in this repository, you only need a working MATLAB installation. In this paper we implement our Meta-FedSysId algorithm with two different FL solvers:
+To run the codes in this repository, you only need a working MATLAB installation. In this paper we implement our FedSysId algorithm with two different FL solvers:
 
 * FedAvg - Ref \[1\]
 * FedLin - Ref \[2\]
