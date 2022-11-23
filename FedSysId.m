@@ -57,14 +57,14 @@ N=25;
 
 %Fixed dissimilarity
 
-delta=0.01;
+epsilon=0.01;
 
 
 % Generating the system matrices:
 % We can generate M system matrices (A(i),B(i)) for A_0 and B_0, 
-% such that max i,j∈[M] ∥[A(i) − A(j), B(i) − B(j) ]∥ ≤ δ.
+% such that max i,j∈[M] ∥[A(i) − A(j), B(i) − B(j) ]∥ ≤ epsilon.
 
-[A,B] = sysgen(A_0,B_0,V,U,M,delta); % This function generates similar systems
+[A,B] = sysgen(A_0,B_0,V,U,M,epsilon); % This function generates similar systems
 
 E_avg=zeros(length(M),R);
 
@@ -93,7 +93,7 @@ M=50;
 
 N=[5 25 50 75 100];
 
-% Here we set delta = 0.01
+% Here we set epsilon = 0.01
 
 %% Numerical results varying the number of rollouts
 
@@ -120,13 +120,13 @@ N=25;
 
 %Dissimilarity
 
-delta=[0.01 0.1 0.25 0.5 0.75];
+epsilon=[0.01 0.1 0.25 0.5 0.75];
 
 %% Numerical results for different number of rollouts
 
-    for j=1:length(delta)
+    for j=1:length(epsilon)
         
-        [A,B] = sysgen(A_0,B_0,V,U,M,delta(j));
+        [A,B] = sysgen(A_0,B_0,V,U,M,epsilon(j));
 
         for i=1:q
             [Error_matrix(i,:)] = sysid(A,B,T,N,M,R,sigu,sigx,sigw,FL_solver,s);
@@ -185,17 +185,17 @@ xlim([1 R])
 grid on; box
 title(title_fig)
 
-% Error vs number of global iterations - verying delta
+% Error vs number of global iterations - verying epsilon
 figure(3);
-delta=[0.01 0.1 0.25 0.5 0.75];
+epsilon=[0.01 0.1 0.25 0.5 0.75];
 ax = axes;
 ax.ColorOrder = [0.2 0.1 1;0.3 0.6 0.1;0.9 0.5 0;0.5 0.9 0.9;0.6 0.5 0.6];
 hold on
-for i=1:length(delta)
+for i=1:length(epsilon)
    plot(1:1:R,S3(i,:),'LineWidth',1.2);
 end
 hold off
-legend(strcat('$\delta=$',num2str(delta')),'Interpreter','latex');
+legend(strcat('$\epsilon=$',num2str(epsilon')),'Interpreter','latex');
 xlab=xlabel('r','Interpreter','latex');
 ylab=ylabel('$e_r$','Interpreter','latex');
 set(xlab,'FontSize',20);
