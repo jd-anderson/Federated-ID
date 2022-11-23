@@ -11,7 +11,7 @@ To run the codes in this repository, you only need a working MATLAB installation
 * FedAvg - Ref \[1\]
 * FedLin - Ref \[2\]
 
-The nominal system considered in our experiments is first presented in Ref \[3\]
+The nominal system considered in our experiments was first presented in Ref \[3\]
 
 **References**
 
