@@ -2,7 +2,7 @@
 
 This repository includes the MATLAB codes to implement the experimental results of the following paper:
 
-1) H. Wang, L. F. Toso, J. Anderson (2022). [FedSysID: A Federated Approach to Sample-Efficient System Identification]
+1) H. Wang, L. F. Toso, J. Anderson (2022). [FedSysID: A Federated Approach to Sample-Efficient System Identification](https://arxiv.org/abs/2211.14393)
 
 ## Instructions
 
