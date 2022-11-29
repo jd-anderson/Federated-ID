@@ -1,4 +1,4 @@
-# FedSysID: A federated approach for identifying discrete-time LTI systems
+# FedSysID: A Federated Approach to Sample-Efficient System Identification
 
 This repository includes the MATLAB codes to implement the experimental results of the following paper:
 
