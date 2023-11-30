@@ -22,4 +22,4 @@ The nominal system considered in our experiments was first presented in Ref \[3\
 
 ## Troubleshooting
 
-If you have any trouble running those codes or have any question about the paper, please email [Leonardo F. Toso](mailto:lt2879@columbia.edu).
+If you have any trouble running those codes or have any question about the paper, please email [Leonardo F. Toso](mailto:lt2879@columbia.edu) or [Han Wang](mailto:hw2786@columbia.edu).
